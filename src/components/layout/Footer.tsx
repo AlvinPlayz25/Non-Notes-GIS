@@ -88,11 +88,17 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="py-4 text-blue-200 text-sm">
+        <div className="py-4 text-blue-200 text-sm flex justify-between items-center">
           <p>
             © 2025 NonNotes. All rights reserved. Made for students, by
             students.
           </p>
+          <Link
+            to="/debug"
+            className="bg-blue-700 hover:bg-blue-600 px-3 py-1 rounded text-white text-xs"
+          >
+            Debug
+          </Link>
         </div>
       </div>
     </footer>

@@ -13,6 +13,7 @@ import ProfilePage from "./components/pages/profile";
 // Settings page temporarily disabled
 // import SettingsPage from "./components/pages/settings";
 import AboutPage from "./components/pages/about";
+import DebugPage from "./components/pages/debug";
 import { AuthProvider, useAuth } from "../supabase/auth";
 import { Toaster } from "./components/ui/toaster";
 import { LoadingScreen, LoadingSpinner } from "./components/ui/loading-spinner";
@@ -44,6 +45,7 @@ function AppRoutes() {
         <Route path="/notes/:id" element={<NoteViewer />} />
         <Route path="/success" element={<Success />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/debug" element={<DebugPage />} />
         <Route
           path="/profile"
           element={
